@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>match-match-game by Artyom Loyko</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" rel="stylesheet">
+  <script src="js/gameConstructor.js"></script>
+  <script src="js/startGame.js"></script>
+</head>
+<body>
+  <main id="main" class="main">
+    <section id="introduction" class="introduction">
+      <article>
+        <h1>HELLO!!!</h1>
+        <p>Find all pairs of cards as quickly as possible to break the record!</p>
+      </article>
+      <section class="game-setting">
+        <h2>Game Setting</h2>
+        <form action="" method="" class="game-setting-form">
+          <label>
+            Select difficulty:
+            <select id='difficulty'>
+              <option>5x2</option>
+              <option>6x3</option>
+              <option>8x3</option>
+            </select>
+          </label>
+        </form>
+        <figure id="skirts" class="skirt-cards">
+          <figcaption>Select scirt:</figcaption>
+          <div>
+            <img src="assets/img/skirt1.png"/>
+            <img src="assets/img/skirt2.png"/>
+            <img src="assets/img/skirt3.png"/>
+          </div>
+        </figure>
+      </section>
+      <section class="user-setting">
+        <h2>User Setting</h2>
+        <form action="" method="" class="user-setting-form" >
+          <label>
+            First Name:
+            <input id='first-name' type="text" placeholder="your first name" required/>
+          </label>
+          <label>
+            Last Name:
+            <input id='last-name' type="text" placeholder="your last name" required/>
+          </label>
+          <label >
+            Email:
+            <input id='email' type="email" placeholder="your email" required/>
+          </label>
+        </form>
+        <button id="start-btn" class="start-game-btn" type="submit">Start game!</button>
+      </section>
+    </section>
+  </main>
+</body>
+</html>

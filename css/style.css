@@ -1,0 +1,269 @@
+@font-face {
+  font-family: "qikki-reg";
+  src: url(../assets/fonts/Qikki-Reg/Qarmic_sans_Abridged.ttf);
+  font-weight: 400;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+}
+
+.introduction {
+  width: 525px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  font-family: qikki-reg;
+  margin: auto;
+  background: rgb(125, 244, 255);
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  text-align: center;
+  overflow: hidden;
+}
+
+.introduction h1 {
+  font-size: 2.4rem;
+  margin: 14px 0 0 0;
+}
+
+.introduction p {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  margin: 10px 0 0 0;
+  
+}
+
+.game-setting {
+  margin-top: 14px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.35rem;
+  background: red;
+  color: white;
+}
+
+.game-setting-form {
+  font-size: 1.05rem;
+}
+
+.game-setting-form select {
+  font-family: qikki-reg;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.skirt-cards figcaption {
+  font-size: 1.05rem;
+  margin-bottom: 10px;
+}
+
+.skirt-cards div {
+  width: 48%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  font-size: 1rem;
+}
+
+.skirt-cards img {
+  width: 63px;
+  height: 78px;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+}
+
+.skirt-cards img:hover {
+  box-sizing: border-box;
+  border: 2px solid black;
+  background: red; 
+  border-radius: 10px;
+}
+
+.user-setting-form label {
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.user-setting-form label:nth-child(2) {
+  margin-left: 30px;
+}
+
+.user-setting-form label:nth-child(3) {
+  display: block;
+  margin-top: 18px;
+}
+
+.user-setting-form input {
+  width: 21%;
+  height: 1%;
+  text-indent: 4px;
+  user-select: none;  
+}
+
+.user-setting-form label:nth-child(3) input {
+  width: 31%;
+}
+
+.user-setting-form input::-webkit-input-placeholder {
+  font-size: 0.75rem;
+  padding-left: 3px;
+}
+
+.user-setting-form input:focus::-webkit-input-placeholder { 
+  color: transparent; 
+}
+
+.start-game-btn {
+  width: 150px;
+  height: 60px;
+  margin: 52px auto 0 auto;
+  background: red;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  border: 2px solid black;
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+}
+
+.start-game-btn:hover {
+  background: yellow;
+}
+
+.border-for-skirt {
+  box-sizing: border-box;
+  border: 2px solid black;
+  background: red;
+  border-radius: 10px;
+}
+
+.wrapper {
+  width: 1000px;
+  height: 610px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  overflow: hidden;
+}
+
+.game-field-container {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  overflow: hidden;
+}
+
+.line {
+  width: 100%;
+  height: 45%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.card {
+  width: 15%;
+  height: 100%;
+  background: rgb(125, 244, 255) center no-repeat;
+  background-size: 70% auto;
+  border: 2px solid red;
+  border-radius: 20px;
+  transition: transform 0.4s linear, opacity 1s, visibility 0s linear 1s;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  font-family: qikki-reg;
+  color: red;
+}
+
+.user-result {
+  width: 520px;
+  height: 525px;
+  display: flex;
+  flex-direction: column;
+  font-family: qikki-reg;
+  margin: auto;
+  background: rgb(125, 244, 255);
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  text-align: center;
+  overflow: hidden;
+}
+
+.user-result p {
+  font-size: 1.75rem;
+  font-family: qikki-reg;
+  margin: 14px auto;
+}
+
+.user-result span:first-child {
+  font-size: 2.4rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: -13px;
+}
+
+.user-result span:last-child {
+  color: red;
+  font-weight: bold;
+}
+
+.table-records {
+  width: 55%;
+  margin: 10px auto 10px;
+  border-collapse: collapse;
+  font-family: qikki-reg;
+}
+
+.table-records tr {
+  font-size: 0.9rem;
+  border-radius: 10px;
+  border: 3px solid black;
+  display: block;
+  border-bottom: 0;
+  padding: 1.4px;
+}
+
+.table-records tr:first-child {
+  font-size: 1.2rem;
+  background: yellow;
+}
+
+.table-records th {
+  padding: 6px;
+  display: block;
+}
+
+.table-records tr:not(:first-child) {
+  background: rgb(51, 255, 0);
+}
+
+.table-records tr:last-child {
+  border-bottom: 2px solid black;
+}
+
+.buttons-container {
+  width: 65%;
+  display: inline-flex;
+  justify-content: space-between;
+  margin: auto;
+}
